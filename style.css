@@ -1,0 +1,84 @@
+/* Tema minimalis — putih bersih, tipografi tegas, aksen biru tua */
+:root{
+  --navy:#172b3a; --blue:#285b73; --blue2:#3d7488; --gold:#d9b66f;
+  --ink:#263641; --muted:#687780; --pale:#f7f8f8; --line:#e5e9eb;
+  --white:#fff; --shadow:0 8px 24px rgba(23,43,58,.045);
+}
+html{scroll-padding-top:76px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+.container{width:min(1120px,90%);margin-inline:auto}
+.topline{background:#172b3a;color:#dfe7eb;padding:6px 0;font-size:11px}
+header{background:rgba(255,255,255,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{height:72px}
+.brand{gap:10px}
+.brand-logo{width:42px;height:42px;border-radius:8px;background:#f5f7f8;border:1px solid var(--line);color:var(--blue)}
+.brand small{letter-spacing:.08em}
+.navlinks{gap:18px;font-size:12px}
+.navlinks a{color:#4d5d66}
+.navlinks a:hover{color:var(--blue)}
+.btn{border-radius:6px;padding:11px 16px;background:var(--navy);color:#fff;box-shadow:none;transition:background .15s ease}
+.btn:hover{transform:none;filter:none;background:var(--blue)}
+.btn-blue{background:var(--navy);color:#fff}
+.btn-ghost{background:transparent;border:1px solid #ffffff80;color:#fff}
+.btn-small{padding:8px 12px;font-size:12px}
+.hero{background:#f7f9fa;color:var(--ink);padding:72px 0 78px}
+.hero:before{display:none}
+.hero-grid{gap:44px}
+.eyebrow{background:transparent;border:1px solid #dbe2e6;color:#52646e;border-radius:4px;padding:6px 9px;font-size:10px;letter-spacing:.08em}
+.dot{background:var(--gold)}
+h1{font-size:clamp(36px,4.8vw,58px);line-height:1.12;letter-spacing:-.04em;color:#172b3a;margin:18px 0}
+h1 em{color:var(--blue);font-style:normal}
+.hero p{font-size:16px;color:#62717a;max-width:530px}
+.hero-foot{color:#687780}
+.art-card{border-radius:10px;border:1px solid #e1e7ea;background:#eef2f3;box-shadow:none}
+.art-card:before,.art-card:after{border-color:#d8e0e4}
+.school-emblem{border-radius:12px;background:#fff;color:var(--navy);box-shadow:none;transform:none}
+.float-tag{border:1px solid #e5e9eb;border-radius:6px;box-shadow:0 4px 14px #172b3a0a;font-size:12px}
+.stats{margin-top:-20px}
+.stats-grid{border-radius:8px;box-shadow:none;border-color:var(--line)}
+.stat{padding:18px}
+.stat strong{color:var(--blue);font-size:17px}
+section{padding:66px 0}
+.section-head{margin-bottom:28px}
+.kicker{color:var(--blue);letter-spacing:.12em;font-size:10px}
+.section-head h2{font-size:clamp(27px,3.2vw,38px);color:var(--navy);letter-spacing:-.03em}
+.section-head p{font-size:14px}
+.visual{min-height:320px;border-radius:8px;background:#f1f4f5}
+.visual:before{display:none}
+.visual-icon{filter:none}
+.check b{background:#edf3f4;color:var(--blue);border-radius:4px}
+.soft{background:#f7f8f8}
+.grid3,.value-grid{gap:16px}
+.card{border-radius:8px;box-shadow:none;border-color:var(--line);transition:border-color .15s ease}
+.card:hover{transform:none;box-shadow:none;border-color:#bdcbd2}
+.card-inner{padding:21px}
+.icon-box{width:42px;height:42px;border-radius:7px;background:#f0f4f5;font-size:21px;margin-bottom:15px}
+.card h3{color:var(--navy)}
+.news-visual,.news-visual.gold,.news-visual.green{background:#eef2f3;color:var(--navy)}
+.news-content{padding:18px}
+.value{background:#fff;border-left:2px solid var(--gold);border-radius:0;padding:18px}
+.gallery-grid{gap:10px}
+.gallery-tile,.gallery-tile:first-child{border-radius:7px;background:#f0f3f4;border-color:#e1e7e9}
+.teacher-card{padding:22px}
+.avatar{border-radius:50%;background:#edf2f3}
+.ppdb{background:#172b3a}
+.ppdb-grid{gap:36px}
+.form-card,.contact-panel,.contact-form{border-radius:8px;box-shadow:none}
+.form-card{padding:24px}
+.field input,.field textarea,.field select{border-radius:5px;border-color:#d8e0e4;background:#fff}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid #b8cbd4;outline-offset:1px}
+.step{border-radius:6px}
+.step-no{border-radius:5px}
+.contact-grid{gap:18px}
+.contact-panel,.contact-form{border:1px solid var(--line);padding:24px}
+.contact-item .ci{border-radius:5px;background:#f0f4f5;color:var(--blue)}
+footer{background:#f7f8f8;color:#5d6b73;border-top:1px solid var(--line)}
+.footer-row{padding:24px 0}
+@media(max-width:760px){
+  .nav{height:66px}
+  .hero{padding:52px 0 58px}
+  .hero-grid{gap:28px}
+  section{padding:52px 0}
+  .stats-grid{border-radius:7px}
+  .stat{padding:14px 8px}
+}
